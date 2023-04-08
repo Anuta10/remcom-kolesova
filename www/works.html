@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Работы | Ремонтная компания</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="header-logo">RemCom</a>
+        <nav class="main-menu j-main-menu">
+          <ul>
+            <li>
+              <a href="reviews.html">Отзывы</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+            <li>
+              <a href="works.html" class="active">Наши работы</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+78128888888" class="header-phone">+7 812 888-88-88</a>
+        <button class="burger j-burger">menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="works">
+      <div class="works-inner">
+        <h1 class="works-title">Наши работы</h1>
+
+        <ul class="filter">
+          <li class="filter-item">
+            <a href="#" class="filter-link j-works-link active" data-filter="all">Все</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link j-works-link" data-filter="electro">Электроника</a>
+          </li>
+          <li class="filter-item">
+            <a href="#" class="filter-link j-works-link" data-filter="wood">Мебель</a>
+          </li>
+        </ul>
+
+        <ul class="works-list">
+          <li class="works-item j-works-item" data-type="electro">
+            <div class="works-card">Электровеник</div>
+          </li>
+          <li class="works-item j-works-item" data-type="wood">
+            <div class="works-card">Деревянные тапочки</div>
+          </li>
+          <li class="works-item j-works-item" data-type="electro">
+            <div class="works-card">Синхрофазотрон</div>
+          </li>
+          <li class="works-item j-works-item" data-type="wood">
+            <div class="works-card">Чайник из бука</div>
+          </li>
+          <li class="works-item j-works-item" data-type="electro">
+            <div class="works-card">Пепелац</div>
+          </li>
+          <li class="works-item j-works-item" data-type="wood">
+            <div class="works-card">Плотяной шкаф</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="order order-separator">
+      <div class="order-inner">
+        <h2 class="order-title">Заявка на ремонт</h2>
+        <form action="#" class="form">
+          <div class="form-field form-field-half">
+            <label for="name" class="form-label">Имя</label>
+            <input name="name" id="name" type="text" class="form-input">
+          </div>
+          <div class="form-field form-field-half">
+            <label for="phone" class="form-label">Телефон</label>
+            <input name="phone" id="phone" type="text" class="form-input">
+          </div>
+          <div class="form-field">
+            <label for="message" class="form-label">Что ремонтируем?</label>
+            <textarea name="message" id="message" class="form-textarea"></textarea>
+          </div>
+          <div class="form-field">
+            <input id="consent" type="checkbox" class="form-checkbox">
+            <label for="consent" class="form-checkbox-text">
+              <i class="form-checkbox-icon"></i>
+              Даю согласие на обработку персональных данных с соответствии
+              с политикой обработки персональных данных
+            </label>
+          </div>
+          <div class="form-field">
+            <button type="submit" class="btn btn-full" disabled>Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wrap">
+        <p class="copyright">Ничего не защищено</p>
+        <ul class="social">
+          <li class="social-item">
+            <a href="#" class="social-link" title="Insta" style="background-image: url(images/icon-insta.svg);"></a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" title="facebook" style="background-image: url(images/icon-fb.svg);"></a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" title="telegram" style="background-image: url(images/icon-telega.svg);"></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="scripts/jquery-3.6.4.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
